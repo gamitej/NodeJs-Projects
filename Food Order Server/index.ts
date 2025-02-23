@@ -1,10 +1,11 @@
-import express, { Request, Response } from "express";
+import express from "express";
+
+import { AdminRoute, VandorRoute } from "./routes";
 
 const app = express();
 
-app.use("/", (_req: Request, res: Response): any => {
-  return res.json("Hi from backend server");
-});
+app.use("/admin", AdminRoute);
+app.use("/vandour", VandorRoute);
 
 const PORT = 8000;
 app.listen(PORT, () => {
