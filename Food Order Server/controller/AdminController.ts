@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { CreateVendorInput } from "../dto/Vendor.dto";
 
-export const CreateVandor = async (
+export const CreateVendor = async (
   req: Request,
   res: Response
 ): Promise<any> => {
@@ -19,6 +19,6 @@ export const CreateVandor = async (
   return res.json({ ...req.body });
 };
 
-export const GetVandors = async (req: Request, res: Response) => {};
+export const GetVendors = async (req: Request, res: Response) => {};
 
-export const GetVandorByID = async (req: Request, res: Response) => {};
+export const GetVendorByID = async (req: Request, res: Response) => {};
