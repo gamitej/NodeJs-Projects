@@ -34,7 +34,7 @@ export const CreateVendor = async (
     lng: 0,
   });
 
-  return res.json({ ...req.body });
+  return res.json(createdVandor);
 };
 
 export const GetVendors = async (req: Request, res: Response) => {};
